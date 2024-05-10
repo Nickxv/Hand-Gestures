@@ -1,0 +1,16 @@
+import numpy as np
+import cv2
+
+# Hold the background frame for background subtraction.
+background = None
+# Hold the hand's data so all its details are in one place.
+hand = None
+# Variables to count how many frames have passed and to set the size of the window.
+frames_elapsed = 0
+FRAME_HEIGHT = 200
+FRAME_WIDTH = 300
+# Humans come in a ton of beautiful shades and colors.
+# Try editing these if your program has trouble recognizing your skin tone.
+CALIBRATION_TIME = 30
+BG_WEIGHT = 0.5
+OBJ_THRESHOLD = 18
